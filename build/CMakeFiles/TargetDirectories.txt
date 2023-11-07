@@ -1,0 +1,14 @@
+/home/zxj/Codes/Payload-SDK-master/build/CMakeFiles/entry.dir
+/home/zxj/Codes/Payload-SDK-master/build/CMakeFiles/edit_cache.dir
+/home/zxj/Codes/Payload-SDK-master/build/CMakeFiles/rebuild_cache.dir
+/home/zxj/Codes/Payload-SDK-master/build/CMakeFiles/list_install_components.dir
+/home/zxj/Codes/Payload-SDK-master/build/CMakeFiles/install.dir
+/home/zxj/Codes/Payload-SDK-master/build/CMakeFiles/install/local.dir
+/home/zxj/Codes/Payload-SDK-master/build/CMakeFiles/install/strip.dir
+/home/zxj/Codes/Payload-SDK-master/build/samples/sample_c++/platform/linux/disease-detect/CMakeFiles/disease-detect.dir
+/home/zxj/Codes/Payload-SDK-master/build/samples/sample_c++/platform/linux/disease-detect/CMakeFiles/edit_cache.dir
+/home/zxj/Codes/Payload-SDK-master/build/samples/sample_c++/platform/linux/disease-detect/CMakeFiles/rebuild_cache.dir
+/home/zxj/Codes/Payload-SDK-master/build/samples/sample_c++/platform/linux/disease-detect/CMakeFiles/list_install_components.dir
+/home/zxj/Codes/Payload-SDK-master/build/samples/sample_c++/platform/linux/disease-detect/CMakeFiles/install.dir
+/home/zxj/Codes/Payload-SDK-master/build/samples/sample_c++/platform/linux/disease-detect/CMakeFiles/install/local.dir
+/home/zxj/Codes/Payload-SDK-master/build/samples/sample_c++/platform/linux/disease-detect/CMakeFiles/install/strip.dir

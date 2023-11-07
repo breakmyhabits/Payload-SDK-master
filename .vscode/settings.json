@@ -1,0 +1,19 @@
+{
+    "files.associations": {
+        "atomic": "cpp",
+        "*.tcc": "cpp",
+        "iomanip": "cpp",
+        "istream": "cpp",
+        "ostream": "cpp",
+        "ios": "cpp",
+        "locale": "cpp",
+        "string": "cpp",
+        "filesystem": "cpp",
+        "iostream": "cpp",
+        "test_data_transmission.h": "c",
+        "dji_platform.h": "c",
+        "dji_typedef.h": "c",
+        "dji_error.h": "c"
+    },
+    "C_Cpp.errorSquiggles": "disabled"
+}
