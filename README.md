@@ -24,7 +24,7 @@ cd /Payload-SDK-master
 sudo /build/bin/disease-detect /configs/yolov5.yaml /checkpoints/yolov5-e-coco.trt
 ```
 
-## use "sudo" in command without password
+## "sudo" without password
 
 ## refresh
 
