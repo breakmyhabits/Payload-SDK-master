@@ -25,6 +25,12 @@ sudo /build/bin/disease-detect /configs/yolov5.yaml /checkpoints/yolov5-e-coco.t
 ```
 
 ## "sudo" without password
+Add following contents in /etc/sudoers
+$user_name is your user account
+'''
+$user_name  ALL=(ALL:ALL) NOPASSWD: ALL
+'''
+Then run dji_sdk_on_jetson_cxx without password
 
 ## refresh
 
