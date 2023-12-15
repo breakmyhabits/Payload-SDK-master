@@ -36,7 +36,8 @@ Then run dji_sdk_on_jetson_cxx without password
 ## refresh
 
 send & receive messages on reasoning board
+save & call messages from remoting controller
 
 ## unfinished
 
-save & call messages from remoting controller
+~~save & call messages from remoting controller~~
