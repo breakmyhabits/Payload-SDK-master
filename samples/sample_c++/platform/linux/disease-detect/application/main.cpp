@@ -57,6 +57,8 @@
 #include <jsoncpp/json/json.h>
 
 #include "v5lite.hpp"
+#include <iostream>
+#include <fstream>
 
 using namespace cv;
 using namespace std;
@@ -76,6 +78,7 @@ static char camIndex = '1';  //camindex: [0] Fpv Camera  [1] Main Camera  [2] Vi
 V5lite *v5lite;
 std::queue<std::vector<V5lite::DetectRes>> que;
 std::mutex mtx;   //need to update to dji_mutex
+static std::string recv_root("/home/nvidia/codes/Payload-SDK-master/recv/");
 bool running = true;
 
 
@@ -329,6 +332,10 @@ BEGINRECV:
                 //goto REACCEPT;
             }
         } else {
+            ofstream ofs;
+            ofs.open(recv_root + "recv.txt", ios::out);
+            ofs << recvBuf << endl;
+            ofs.close();
             USER_LOG_INFO("mop channel recv data from channel length:%d count:%d", realLen, recvDataCount++);
         }
     }
@@ -450,34 +457,6 @@ REACCEPT:
         }
 
         //sendserver->TaskSleepMs(1000 / 1);
-
-        /*
-        auto js_time = std::chrono::high_resolution_clock::to_time_t(std::chrono::high_resolution_clock::now());
-        char jt[20];
-        strftime(jt, sizeof(jt), "%Y%m%d-%H:%M:%S", localtime(&js_time));
-        string wrtime = jt;
-        pkg["time"] = wrtime;
-        Json::FastWriter wt;
-        ofstream os;
-        
-        os.open(jstxt, std::ios::out | std::ios::app);
-        if (!os.is_open()){
-        cout << "write stop" << endl;
-        }
-        os << wt.write(pkg);
-        os.close();
-        
-
-        if (mopRet == MOP_PASSED) {
-        DSTATUS("[File-Service] upload request ack %s", sendBuf);
-        } else if (mopRet == MOP_TIMEOUT) {
-        DERROR("[File-Service] send timeout");
-        } else if (mopRet == MOP_CONNECTIONCLOSE) {
-        DERROR("[File-Service] connection close");
-        running = false;
-        } else {
-        DERROR("[File-Service] send error");
-        }*/
         
     }
     sendserver->Free(sendBuf);
